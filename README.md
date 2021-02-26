@@ -1,24 +1,48 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Rails Blog app
 
-Things you may want to cover:
+This is a Rails blog app, it's a sample of a simple blog app made using Rails.
 
-* Ruby version
+I corrected the errors using Rubocop and used Linters to make sure everything was perfect.
 
-* System dependencies
+## Screenshot
 
-* Configuration
+![Screenshot](assets/Screenshot.png)
 
-* Database creation
+## Built With
 
-* Database initialization
+- Ruby
+- Rails
+- Rubocop
+- Linters
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+To get started with the project follow the steps below:
+- `git clone git@github.com:greg0109/railsblogapp.git`
+- `cd railsblogapp`
+- `git checkout railsblogapp`
+- `bundle install`
+- `bin/rails db:migrate`
 
-* Deployment instructions
+## Authors
 
-* ...
+👤 Gregorio Rábago Sainz
+
+- GitHub: [@Greg0109](https://github.com/greg0109)
+- Twitter: [@Greg_0109](https://twitter.com/greg_0109)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/greg0109/RailsBlogApp/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](LICENSE) licensed.
