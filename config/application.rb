@@ -1,6 +1,10 @@
-require_relative "boot"
+# frozen_string_literal: true
 
-require "rails/all"
+# rubocop:disable Style/Documentation
+
+require_relative 'boot'
+
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -20,3 +24,5 @@ module RailsBlogApp
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+
+# rubocop:enable Style/Documentation
