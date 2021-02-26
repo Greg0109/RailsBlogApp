@@ -1,32 +1,29 @@
 <p id="notice"><%= notice %></p>
-
-<h1 class="col-12">Articles</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th class="col-12">Title</th>
-      <th class="col-12">Text</th>
-      <th class="col-12">Author</th>
-      <th colspan="3" class="col-12"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @articles.each do |article| %>
-      <tr>
-        <td class="col-12"><%= article.title %></td>
-        <td class="col-12"><%= article.text %></td>
-        <td class="col-12"><%= article.author %></td>
-      </tr>
-      <td><%= link_to 'Show', article %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      <hr:>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<div class="col-12"><%= link_to 'New Article', new_article_path %></div>
+<div class="column">
+  <div class="title">
+    <h1 class="col-12">Articles</h1>
+    <div><%= link_to 'New Article', new_article_path, class: 'btn bg-dark px-5 py-0 text-white' %></div>
+  </div>
+  <div class="row" style="max-width: 1000px">
+    <table class="pt-5">
+      <tbody>
+        <% @articles.each do |article| %>
+          <div class="mx-3 my-3 col-5">
+            <div class="card" style="width: 400px; height: 200px">
+              <div class="card-body">
+                <h3 class="card-title text-left"><%= article.title %></h3>
+                <p class="card-subtitle mb-2 text-muted text-left"><%= article.author %></p>
+                <p class="card-text text-left"><%= article.text.truncate(100) %></p>
+                <div class="buttons text-left">
+                  <%= link_to 'Show', article, class: 'btn bg-secondary text-white p-1' %>
+                  <%= link_to 'Edit', edit_article_path(article), class: 'btn bg-secondary text-white p-1' %>
+                  <%= link_to 'Delete', article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger p-1 text-white' %>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

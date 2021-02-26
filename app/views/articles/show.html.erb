@@ -1,19 +1,14 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
-
-<p>
-  <strong>Author:</strong>
-  <%= @article.author %>
-</p>
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+<div class="column">
+  <p id="notice"><%= notice %></p>
+  <div class="title">
+    <h1><%= @article.title %></h1>
+    <p><%= @article.author %></p>
+  </div>
+  <p>
+    <%= @article.text %>
+  </p>
+  <div class="buttons">
+    <%= link_to 'Edit', edit_article_path(@article) %> |
+    <%= link_to 'Back', articles_path %>
+  </div>
+</div>
