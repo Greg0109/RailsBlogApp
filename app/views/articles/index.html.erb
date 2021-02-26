@@ -1,31 +1,32 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Articles</h1>
+<h1 class="col-12">Articles</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Text</th>
-      <th>Author</th>
-      <th colspan="3"></th>
+      <th class="col-12">Title</th>
+      <th class="col-12">Text</th>
+      <th class="col-12">Author</th>
+      <th colspan="3" class="col-12"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @articles.each do |article| %>
       <tr>
-        <td><%= article.title %></td>
-        <td><%= article.text %></td>
-        <td><%= article.author %></td>
-        <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="col-12"><%= article.title %></td>
+        <td class="col-12"><%= article.text %></td>
+        <td class="col-12"><%= article.author %></td>
       </tr>
+      <td><%= link_to 'Show', article %></td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <hr:>
     <% end %>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New Article', new_article_path %>
+<div class="col-12"><%= link_to 'New Article', new_article_path %></div>
