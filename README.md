@@ -33,6 +33,11 @@ To get started with the project follow the steps below:
 - GitHub: [@Greg0109](https://github.com/greg0109)
 - Twitter: [@Greg_0109](https://twitter.com/greg_0109)
 
+👤 Salley Iddrisu
+
+- GitHub: [@juxsalley](https://github.com/juxsalley)
+- Twitter: [@__salley](https://twitter.com/__salley)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
