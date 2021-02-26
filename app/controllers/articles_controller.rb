@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# rubocop:disable Style/Documentation
+
 class ArticlesController < ApplicationController
   before_action :set_article, only: %i[show edit update destroy]
 
@@ -68,3 +70,5 @@ class ArticlesController < ApplicationController
     params.require(:article).permit(:title, :text, :author)
   end
 end
+
+# rubocop:enable Style/Documentation
